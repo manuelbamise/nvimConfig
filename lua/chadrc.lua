@@ -19,12 +19,12 @@ M.ui = {
   statusline = {
     theme = "default",
     separator_style = "arrow",
-    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "lsp", "cwd", "xyz" },
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "lsp", "cwd"},
     modules = {
-      file="%f",
-      xyz = function()
-        return "hello world"
-      end,
+      file = "%f"
+      --   xyz = function()
+      --     return "hello world"
+      --   end,
     },
   },
 
