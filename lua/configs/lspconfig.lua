@@ -28,16 +28,20 @@ lspconfig.tailwindcss.setup {
   },
 }
 
-lspconfig.emmet_ls.setup({
-        filetypes = { "html", "css", "vue", "javascriptreact", "typescriptreact" },
-        init_options = {
-          html = {
-            options = {
-              ["bem.enabled"] = true,
-            },
-          },
-        },
-      })
+lspconfig.emmet_ls.setup {
+  filetypes = { "html", "css", "vue", "javascriptreact", "typescriptreact" },
+  init_options = {
+    html = {
+      options = {
+        ["bem.enabled"] = true,
+      },
+    },
+  },
+}
+
+lspconfig.ts_ls.setup {
+  filetypes ={"typescript"}
+}
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
